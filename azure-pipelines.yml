@@ -27,6 +27,7 @@ steps:
   inputs:
     command: 'build'
     projects: '**.sln'
+    arguments: '--output $(Build.BinariesDirectory)'
     
 - task: DotNetCoreCLI@2
   inputs:
